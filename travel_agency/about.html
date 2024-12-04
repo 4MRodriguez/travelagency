@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./travelstyle.css">
+
+</head>
+<body>
+
+    <br><br><br>
+    <div  align="center">
+    <h2>Our Story</h2>
+    </div>
+    <p>We have a very long history of helping people get where they need to go. We began as a small airline, starting in the 1920's with some of the earliest travel planes created. Our modest company quickly began to grow bigger, earning more customers as airplanes and technology rapidly improved.<br><br>With more competition in the industry but still a desire to help people, the owner decided to turn our airline into one of the biggest travel agencies. Even though we no longer run the airports themself, we still love to make sure people reach their destinations and have the greatest time possible!</p>
+
+    <br><br>
+    
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="./images/history/oldplane.png" alt="plane" width="100%">
+      </div>
+    
+      <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="./images/history/oldplaneboarding.png" alt="plane boarding" width="100%">
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="./images/history/oldplaneflying.png" alt="plane flying" width="100%">
+      </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="./images/history/peoplesittinginplane.png" alt="people sitting in plane" width="100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="./images/history/servingfoodplane.png" alt="people eating in plane" width="100%">
+    </div>
+    
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="./images/history/building.png" alt="building" width="100%">
+      </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000);
+    }
+    </script>
+
+<div class="navbar">
+    <img align="left" img src="./images/logo.png" width="95">
+        <a href="./index.html">Home</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./vacations.html">Vacations</a>
+        <a href="./offers.html">Current Offers</a>
+        <a href="./about.html">About Us</a>
+        <a href="./reviews.html">Reviews</a>
+    </div>
+    
+    </body>
+    <br><br>
+    <h3> </h3>
+    <div align="center">
+        <footer><p>&copy 2024 Designed by Maria Rodriguez</p></footer>
+        </div>
+        </html>
